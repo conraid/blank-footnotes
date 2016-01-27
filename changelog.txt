@@ -1,0 +1,16 @@
+*** Blank Footnotes ***
+
+2016-27-01 version 0.3
+
+* Add localization (in langs)
+* Add italian language
+
+2016-22-01 version 0.2
+
+* Add button for text editor
+* Add button for TinyMCE
+
+2016-16-01 version 0.1
+
+* Initial release
+* Markdown footnotes
