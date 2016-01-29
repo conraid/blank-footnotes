@@ -188,7 +188,7 @@ function bfn_add_mce_button() {
 	// Add filter if WYSIWYG is enabled
 	if ( 'true' == get_user_option( 'rich_editing' ) ) {
 		add_filter( 'mce_external_plugins', 'bfn_enqueue_mce_plugin_scripts' );
-		add_filter( 'mce_buttons', 'bfm_register_mce_buttons' );
+		add_filter( 'mce_buttons', 'bfn_register_mce_buttons' );
 	}
 
 }
