@@ -39,17 +39,22 @@ No configuration is necessary.
 
 == Changelog ==
 
+= 0.4 =
+
+* Added Documentation in PHPDoc format.
+* Renamed some function with bfn_ preposition
+
 = 0.3 =
 
-* Add localization (in /langs)
-* Add italian language
+* Added localization (in langs)
+* Added italian language
 
 = 0.2 =
 
-* Add button for TinyMCE
+* Added button for text editor
+* Added button for TinyMCE
 
 = 0.1 =
 
 * Initial release
-* Markdown footnotes regex
-* Add button for text editor
+* Regex to convert Markdown footnotes to HTML
