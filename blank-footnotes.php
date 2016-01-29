@@ -53,7 +53,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function bfn_init() {
 
-    // Load file .mo from subcirectory "langs".
+    // Load file .mo from subdirectory "langs".
 	load_plugin_textdomain( 'blank-footnotes', false, dirname( plugin_basename( __FILE__ ) ) . '/langs' );
 
 }
