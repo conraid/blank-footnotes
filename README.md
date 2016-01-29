@@ -1,4 +1,4 @@
-Blank Footnotes
+# Blank Footnotes
 
 Plugin to show footnotes using markdown notation.
 
