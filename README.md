@@ -1,6 +1,6 @@
 # Blank Footnotes
 
-Plugin to show footnotes using markdown notation.
+Wordpress Plugin to show footnotes using markdown notation.
 
 ## Description 
 
