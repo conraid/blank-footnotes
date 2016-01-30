@@ -5,9 +5,9 @@ Wordpress Plugin to show footnotes using markdown notation.
 ## Description 
 
 This plugin allows one to create footnotes by using markdown notation.
-It only uses footnotes. No other markdown tag is taken into account
+It is for footnotes only. No other markdown tag is taken into account
 
-Use in this way:
+Example:
 
     I have more [^1] to say up here.
 
@@ -19,8 +19,6 @@ Unlike jetpack-markdown, footnotes will appear in the exact point where they hav
 ## Installation
 
 This section describes how to install the plugin and get it working.
-
-e.g.
 
 1. Upload the plugin files to the '/wp-content/plugins/plugin-name' directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress
