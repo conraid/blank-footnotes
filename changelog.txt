@@ -1,16 +1,20 @@
 *** Blank Footnotes ***
 
-2016-27-01 version 0.4
+2016-02-01 version 1.0
+
+* First version in Wordpress plugins directory
+
+2016-01-27 version 0.4
 
 * Added Documentation in PHPDoc format.
 * Renamed some function with bfn_ preposition
 
-2016-27-01 version 0.3
+2016-01-26 version 0.3
 
 * Added localization (in langs)
 * Added italian language
 
-2016-22-01 version 0.2
+2016-01-22 version 0.2
 
 * Added button for text editor
 * Added button for TinyMCE

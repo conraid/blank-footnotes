@@ -4,7 +4,7 @@ Donate link: http://conraid.net
 Tags: footnotes
 Requires at least: 4.4
 Tested up to: 4.4
-Stable tag: 4.4
+Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,6 +36,10 @@ This section describes how to install the plugin and get it working.
 No configuration is necessary.
 
 == Changelog ==
+
+= 1.0 =
+
+* First version in Wordpress plugins directory
 
 = 0.4 =
 
