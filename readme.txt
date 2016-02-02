@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== Blank Footnotes ===
 Contributors: conraid
 Donate link: http://conraid.net
 Tags: footnotes
@@ -34,6 +34,12 @@ This section describes how to install the plugin and get it working.
 == Configuration ==
 
 No configuration is necessary.
+
+== Screenshots ==
+
+1. Visual Editor TinyMCE with plugin actived
+2. Popup where you can enter note number
+3. Example with the footnotes display
 
 == Changelog ==
 
