@@ -47,6 +47,7 @@ No configuration is necessary.
 
 * Fix english language
 * Fix text editor string
+* Fix syntax for Wordpress coding standard
 
 = 1.0 =
 

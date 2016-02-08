@@ -41,9 +41,9 @@ Text Domain: footnotes
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 
-// Exit if accessed directly
+// Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
-    exit;
+	exit;
 }
 
 /**
@@ -53,7 +53,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function bfn_init() {
 
-    // Load file .mo from subdirectory "langs".
+	// Load file .mo from subdirectory "langs".
 	load_plugin_textdomain( 'blank-footnotes', false, dirname( plugin_basename( __FILE__ ) ) . '/langs' );
 
 }
@@ -69,13 +69,13 @@ add_action( 'plugins_loaded', 'bfn_init' );
  */
 function bfn_markdown_convert( $content ) {
 
-    // Get Post ID from database
+	// Get Post ID from database.
 	$post_id = intval( get_the_ID() );
 
-	// Regex to convert markdown footnotes to HTML
+	// Regex to convert markdown footnotes to HTML.
 	$content = preg_replace( '/\[\^(\d+)\]:/' , "<span class='footnote' id='fn-$post_id-$1'><a href='#fnref-$post_id-$1'>$1</a>.</span>" , $content );
 
-	// Regex to convert markdown reference notes to HTML
+	// Regex to convert markdown reference notes to HTML.
 	$content = preg_replace( '/\[\^(\d+)\]/' , "<sup class='footnote' id='fnref-$post_id-$1'><a href='#fn-$post_id-$1' rel='footnote'>$1</a></sup>" , $content );
 
 	return($content);
@@ -89,9 +89,8 @@ function bfn_markdown_convert( $content ) {
  *    if ( ! class_exists( 'Jetpack' ) || ! Jetpack::is_module_active( 'photon' ) ) {
  *      add_action( 'the_content', 'bfn_markdown_convert', 1 );
  *    }
- *
  */
-if ( ! in_array( 'markdown', get_option( 'jetpack_active_modules' ) ) ) {
+if ( ! in_array( 'markdown', get_option( 'jetpack_active_modules' ), true ) ) {
 	add_action( 'the_content', 'bfn_markdown_convert', 1 );
 }
 
@@ -145,12 +144,12 @@ add_action( 'admin_print_footer_scripts', 'appthemes_add_quicktags' );
 /**
  * Add plugin to the Visual Editor TimyMCE plugins.
  *
- * @param array $plugin_array
+ * @param array $plugin_array TinyMCE Plugins.
  * @return array
  */
 function bfn_enqueue_mce_plugin_scripts( $plugin_array ) {
 
-	$plugin_array[ 'bfn_button_plugin' ] =  plugin_dir_url( __FILE__ ) . 'bfn.js';
+	$plugin_array['bfn_button_plugin'] = plugin_dir_url( __FILE__ ) . 'bfn.js';
 
 	return $plugin_array;
 
@@ -159,13 +158,13 @@ function bfn_enqueue_mce_plugin_scripts( $plugin_array ) {
 /**
  * Add more buttons to the Visual Editor TimyMCE
  *
- * @param array $buttons TinyMCE buttons
+ * @param array $buttons TinyMCE buttons.
  * @return array
  */
 function bfn_register_mce_buttons( $buttons ) {
 
-	array_push($buttons, "bfn");
-	array_push($buttons, "bfn_note");
+	array_push( $buttons, 'bfn' );
+	array_push( $buttons, 'bfn_note' );
 
 	return $buttons;
 }
@@ -180,13 +179,13 @@ function bfn_register_mce_buttons( $buttons ) {
  */
 function bfn_add_mce_button() {
 
-	// Check user permissions
-	if ( !current_user_can( 'edit_posts' ) && !current_user_can( 'edit_pages' ) ) {
+	// Check user permissions.
+	if ( ! current_user_can( 'edit_posts' ) && ! current_user_can( 'edit_pages' ) ) {
 		return;
 	}
 
-	// Add filter if WYSIWYG is enabled
-	if ( 'true' == get_user_option( 'rich_editing' ) ) {
+	// Add filter if WYSIWYG is enabled.
+	if ( 'true' === get_user_option( 'rich_editing' ) ) {
 		add_filter( 'mce_external_plugins', 'bfn_enqueue_mce_plugin_scripts' );
 		add_filter( 'mce_buttons', 'bfn_register_mce_buttons' );
 	}

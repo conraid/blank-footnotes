@@ -1,9 +1,10 @@
 *** Blank Footnotes ***
 
-2016-02-05 version 1.1
+2016-02-08 version 1.1
 
-* Fix english language
-* Fix text editor string
+* Fix translated string
+* Fix button string
+* Fix syntax for Wordpress coding standard
 
 2016-02-01 version 1.0
 
