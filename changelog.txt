@@ -1,5 +1,10 @@
 *** Blank Footnotes ***
 
+2016-02-05 version 1.1
+
+* Fix english language
+* Fix text editor string
+
 2016-02-01 version 1.0
 
 * First version in Wordpress plugins directory

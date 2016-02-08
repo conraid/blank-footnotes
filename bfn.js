@@ -11,7 +11,7 @@
 					body: [ {
 						type: 'textbox',
 						name: 'note_id',
-						label: 'Insert number note',
+						label: 'Enter number note',
 						value: ''
 					} ],
 					onsubmit: function( e ) {
@@ -32,7 +32,7 @@
 					body: [ {
 						type: 'textbox',
 						name: 'note_id',
-						label:'Insert number note',
+						label:'Enter number note',
 						value: ''
 					} ],
 					onsubmit: function( e ) {

@@ -11,7 +11,7 @@ msgstr ""
 "PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
 
 #: blank-footnotes.php:64
-msgid "Note number"
+msgid "Reference note"
 msgstr ""
 
 #: blank-footnotes.php:69 blank-footnotes.php:83
@@ -19,5 +19,5 @@ msgid "Enter number note"
 msgstr ""
 
 #: blank-footnotes.php:78
-msgid "Note:"
+msgid "Note"
 msgstr ""
