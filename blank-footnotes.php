@@ -118,7 +118,7 @@ function appthemes_add_quicktags() {
 		var id = prompt("<?php esc_html_e( 'Enter number note', 'blank-footnotes' ); ?>");
 
 		if (id != null) {
-			QTags.insertContent('[^' + id +']');
+			QTags.insertContent('[^' + id +'] ');
 		}
 	}
 
@@ -132,7 +132,7 @@ function appthemes_add_quicktags() {
 		var id = prompt("<?php esc_html_e( 'Enter number note', 'blank-footnotes' ); ?>");
 
 		if (id != null) {
-			QTags.insertContent('[^' + id +']:');
+			QTags.insertContent('[^' + id +']: ');
 		}
 	}
 </script>

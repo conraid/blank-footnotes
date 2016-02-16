@@ -15,7 +15,7 @@
 						value: ''
 					} ],
 					onsubmit: function( e ) {
-						note_id='[^' + e.data.note_id +']';
+						note_id='[^' + e.data.note_id +'] ';
 						editor.insertContent( note_id );
 					}
 				});
@@ -36,7 +36,7 @@
 						value: ''
 					} ],
 					onsubmit: function( e ) {
-						note_id='[^' + e.data.note_id +']:';
+						note_id='[^' + e.data.note_id +']: ';
 						editor.insertContent( note_id );
 					}
 				});
