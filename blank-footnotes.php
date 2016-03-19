@@ -16,7 +16,7 @@
 Plugin Name: Blank_Footnotes
 Plugin URI: https://github.com/conraid/blank-footnotes
 Description: Footnotes in Markdown mode
-Version: 1.1
+Version: 1.3
 Author: Corrado Franco <conraid@linux.it>
 Author URI: http://conraid.net
 License: GPL-2
@@ -90,7 +90,11 @@ function bfn_markdown_convert( $content ) {
  *      add_action( 'the_content', 'bfn_markdown_convert', 1 );
  *    }
  */
-if ( ! in_array( 'markdown', get_option( 'jetpack_active_modules' ), true ) ) {
+if ( get_option('jetpack_active_modules')) {
+	if ( ! in_array( 'markdown', get_option( 'jetpack_active_modules' ), true ) ) {
+		add_action( 'the_content', 'bfn_markdown_convert', 1 );
+	}
+} else {
 	add_action( 'the_content', 'bfn_markdown_convert', 1 );
 }
 

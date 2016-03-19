@@ -4,7 +4,7 @@ Donate link: http://conraid.net
 Tags: footnotes, footnote, notes, reference, endnotes, formatting
 Requires at least: 4.4
 Tested up to: 4.4
-Stable tag: 1.1
+Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -42,6 +42,10 @@ No configuration is necessary.
 3. Example with the footnotes display
 
 == Changelog ==
+
+= 1.3 =
+
+* Fix jetpack detection
 
 = 1.1 =
 
