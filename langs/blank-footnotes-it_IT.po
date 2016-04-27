@@ -15,7 +15,7 @@ msgid "Reference note"
 msgstr "Riferimento nota"
 
 #: blank-footnotes.php:69 blank-footnotes.php:83
-msgid "Enter number note"
+msgid "Enter note number"
 msgstr "Inserisci il numero della nota"
 
 #: blank-footnotes.php:78
