@@ -16,7 +16,7 @@
 Plugin Name: Blank_Footnotes
 Plugin URI: https://github.com/conraid/blank-footnotes
 Description: Footnotes in Markdown mode
-Version: 1.4
+Version: 1.5
 Author: Corrado Franco <conraid@linux.it>
 Author URI: http://conraid.net
 License: GPL-2
@@ -133,7 +133,7 @@ function appthemes_add_quicktags() {
 		);
 
 	function bfn_foot_callback() {
-		var id = prompt("<?php esc_html_e( 'Enter number note', 'blank-footnotes' ); ?>");
+		var id = prompt("<?php esc_html_e( 'Enter note number', 'blank-footnotes' ); ?>");
 
 		if (id != null) {
 			QTags.insertContent('[^' + id +']: ');
