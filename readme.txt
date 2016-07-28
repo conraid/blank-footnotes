@@ -3,7 +3,7 @@ Contributors: conraid
 Donate link: http://conraid.net
 Tags: footnotes, footnote, notes, reference, endnotes, formatting
 Requires at least: 4.4
-Tested up to: 4.5.1
+Tested up to: 4.6
 Stable tag: 1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
