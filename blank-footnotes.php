@@ -16,11 +16,12 @@
 Plugin Name: Blank_Footnotes
 Plugin URI: https://github.com/conraid/blank-footnotes
 Description: Footnotes in Markdown mode
-Version: 1.5
+Version: 1.6
 Author: Corrado Franco <conraid@linux.it>
 Author URI: http://conraid.net
 License: GPL-2
-Text Domain: footnotes
+Text Domain: blank-footnotes
+Domain Path: /langs
 */
 
 /**

@@ -3,12 +3,12 @@ Contributors: conraid
 Donate link: http://conraid.net
 Tags: footnotes, footnote, notes, reference, endnotes, formatting
 Requires at least: 4.4
-Tested up to: 4.6
-Stable tag: 1.5
+Tested up to: 4.7
+Stable tag: 1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Plugin to show footnotes using markdown notation.
+Simple plugin to show footnotes using markdown notation.
 
 == Description ==
 
@@ -42,6 +42,10 @@ No configuration is necessary.
 3. Example with the footnotes display
 
 == Changelog ==
+
+= 1.6 =
+
+* Add domain path
 
 = 1.5 =
 
