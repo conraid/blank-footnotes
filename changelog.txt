@@ -1,5 +1,12 @@
 *** Blank Footnotes ***
 
+2018-11-10 version 1.6.1
+
+* Added note for Gutenberg.
+* Fixed style according to WordPress Coding Standards for
+PHP_CodeSniffer.
+* Tested with Wordpress 5.0 classic editor
+
 2017-04.05 version 1.6
 
 * Add domain path

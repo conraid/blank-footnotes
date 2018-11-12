@@ -3,8 +3,8 @@ Contributors: conraid
 Donate link: http://conraid.net
 Tags: footnotes, footnote, notes, reference, endnotes, formatting
 Requires at least: 4.4
-Tested up to: 4.9
-Stable tag: 1.6
+Tested up to: 5.0
+Stable tag: 1.6.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,11 +24,13 @@ Example:
 If used with jetpack and enabled markdown, it only shows the buttons without modifying the text content.
 Unlike jetpack-markdown, footnotes will appear in the exact point where they have been inserted. To go back to text mode click on the footnote number.
 
+Work only with Classic Editor, in visual and html mode. Not work with Gutenberg.
+
 == Installation ==
 
 This section describes how to install the plugin and get it working.
 
-1. Upload the plugin files to the '/wp-content/plugins/plugin-name' directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the plugin files to the '/wp-content/plugins/blank-footnotes' directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress
 
 == Configuration ==

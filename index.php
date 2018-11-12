@@ -7,4 +7,4 @@
  * @package Blank_Footnotes
  */
 
-?>
+// Silent is god!

@@ -74,12 +74,12 @@ function bfn_markdown_convert( $content ) {
 	$post_id = intval( get_the_ID() );
 
 	// Regex to convert markdown footnotes to HTML.
-	$content = preg_replace( '/\[\^(\d+)\]:/' , "<span class='footnote' id='fn-$post_id-$1'><a href='#fnref-$post_id-$1'>$1</a>.</span>" , $content );
+	$content = preg_replace( '/\[\^(\d+)\]:/', "<span class='footnote' id='fn-$post_id-$1'><a href='#fnref-$post_id-$1'>$1</a>.</span>", $content );
 
 	// Regex to convert markdown reference notes to HTML.
-	$content = preg_replace( '/\[\^(\d+)\]/' , "<sup class='footnote' id='fnref-$post_id-$1'><a href='#fn-$post_id-$1' rel='footnote'>$1</a></sup>" , $content );
+	$content = preg_replace( '/\[\^(\d+)\]/', "<sup class='footnote' id='fnref-$post_id-$1'><a href='#fn-$post_id-$1' rel='footnote'>$1</a></sup>", $content );
 
-	return($content);
+	return( $content );
 
 }
 /**
@@ -91,7 +91,7 @@ function bfn_markdown_convert( $content ) {
  *      add_action( 'the_content', 'bfn_markdown_convert', 1 );
  *    }
  */
-if ( get_option('jetpack_active_modules')) {
+if ( get_option( 'jetpack_active_modules' ) ) {
 	if ( ! in_array( 'markdown', get_option( 'jetpack_active_modules' ), true ) ) {
 		add_action( 'the_content', 'bfn_markdown_convert', 1 );
 	}
@@ -141,7 +141,7 @@ function appthemes_add_quicktags() {
 		}
 	}
 </script>
-<?php
+		<?php
 	}
 }
 add_action( 'admin_print_footer_scripts', 'appthemes_add_quicktags' );
