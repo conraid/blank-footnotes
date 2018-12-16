@@ -3,8 +3,8 @@ Contributors: conraid
 Donate link: http://conraid.net
 Tags: footnotes, footnote, notes, reference, endnotes, formatting
 Requires at least: 4.4
-Tested up to: 5.0
-Stable tag: 1.6.1
+Tested up to: 5.0.1
+Stable tag: 1.6.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,7 +24,9 @@ Example:
 If used with jetpack and enabled markdown, it only shows the buttons without modifying the text content.
 Unlike jetpack-markdown, footnotes will appear in the exact point where they have been inserted. To go back to text mode click on the footnote number.
 
-Work only with Classic Editor, in visual and html mode. Not work with Gutenberg.
+N.B
+This plugin also works with Gutenberg. But the button only appears in the Classic Editor.
+For now with Gutenberg enter the codes directly.
 
 == Installation ==
 
@@ -44,6 +46,18 @@ No configuration is necessary.
 3. Example with the footnotes display
 
 == Changelog ==
+
+= 1.6.2 =
+
+* Added note for Gutenberg
+* Tested with Wordpress 5.0.1
+
+= 1.6.1 =
+
+* Added note for Gutenberg.
+* Fixed style according to WordPress Coding Standards for
+PHP_CodeSniffer.
+* Tested with Wordpress 5.0 classic editor
 
 = 1.6 =
 

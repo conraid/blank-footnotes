@@ -2,12 +2,12 @@
 /**
  * Convert footnotes Markdown in html
  *
- * PHP version 5
+ * PHP version 7
  *
  * @category  Wordpress_Plugin
  * @package   Blank_Footnotes
  * @author    Corrado Franco <conraid@linux.it>
- * @copyright 2016 Corrado Franco
+ * @copyright 2016-2018 Corrado Franco
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GPL-2
  * @link      https://github.com/conraid/blank-footnotes
  */
@@ -16,7 +16,7 @@
 Plugin Name: Blank_Footnotes
 Plugin URI: https://github.com/conraid/blank-footnotes
 Description: Footnotes in Markdown mode
-Version: 1.6
+Version: 1.6.2
 Author: Corrado Franco <conraid@linux.it>
 Author URI: http://conraid.net
 License: GPL-2
@@ -25,7 +25,7 @@ Domain Path: /langs
 */
 
 /**
- * Copyright 2016 Corrado Franco <conraid@linux.it>
+ * Copyright 2016-2018 Corrado Franco <conraid@linux.it>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License

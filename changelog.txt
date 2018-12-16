@@ -1,5 +1,10 @@
 *** Blank Footnotes ***
 
+2018-11-10 version 1.6.2
+
+* Added note for Gutenberg
+* Tested with Wordpress 5.0.1
+
 2018-11-10 version 1.6.1
 
 * Added note for Gutenberg.

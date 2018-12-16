@@ -16,6 +16,10 @@ Example:
 If used with jetpack and enabled markdown, it only shows the buttons without modifying the text content.
 Unlike jetpack-markdown, footnotes will appear in the exact point where they have been inserted. To go back to text mode click on the footnote number.
 
+N.B
+This plugin also works with Gutenberg. But the button only appears in the Classic Editor.
+For now with Gutenberg enter the codes directly.
+
 ## Installation
 
 This section describes how to install the plugin and get it working.
