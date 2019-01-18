@@ -39,6 +39,8 @@ This section describes how to install the plugin and get it working.
 
 No configuration is necessary.
 
+Considering that this plugin, like others working with "markdown", parsing the page every time I load it, I highly recommend using a caching plugin.
+
 == Screenshots ==
 
 1. Visual Editor TinyMCE with plugin actived

@@ -22,8 +22,6 @@ For now with Gutenberg enter the codes directly.
 
 ## Installation
 
-This section describes how to install the plugin and get it working.
-
 1. Upload the plugin files to the '/wp-content/plugins/plugin-name' directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress
 
@@ -31,3 +29,4 @@ This section describes how to install the plugin and get it working.
 
 No configuration is necessary.
 
+Considering that this plugin, like others working with "markdown", parsing the page every time I load it, I highly recommend using a caching plugin..
