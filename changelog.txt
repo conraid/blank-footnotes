@@ -1,5 +1,9 @@
 *** Blank Footnotes ***
 
+2019-02-11 version 1.6.3
+
+* Fixed plugin name
+
 2018-11-10 version 1.6.2
 
 * Added note for Gutenberg
