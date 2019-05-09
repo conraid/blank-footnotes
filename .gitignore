@@ -1,1 +1,4 @@
 *~
+.phpcs.xml
+phpcs.xml
+ruleset.xml
