@@ -1,24 +1,32 @@
-# Copyright (C) 2016 Blank Markdown Footnotes
-# This file is distributed under the same license as the Blank Markdown Footnotes package.
+# Copyright (C) 2019 Corrado Franco <conraid@linux.it>
+# This file is distributed under the same license as the Blank Footnotes plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Blank Markdown Footnotes 0.2\n"
-"Report-Msgid-Bugs-To: https://github.com/conraid/blank-footnotes/issues\n"
-"POT-Creation-Date: 2016-01-26 14:41:15+00:00\n"
+"Project-Id-Version: Blank Footnotes 1.6.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/blank-footnotes\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2019-02-12T11:36:23+00:00\n"
+"PO-Revision-Date: 2019-02-12 12:42+0100\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Domain: blank-footnotes\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: it_IT\n"
 
-#: blank-footnotes.php:64
+#. Description of the plugin
+msgid "Footnotes in Markdown mode"
+msgstr "Note a piè di pagina in notazione Markdown"
+
+#: blank-footnotes.php:118
 msgid "Reference note"
-msgstr "Riferimento nota"
+msgstr "Riferimento della nota"
 
-#: blank-footnotes.php:69 blank-footnotes.php:83
+#: blank-footnotes.php:123 blank-footnotes.php:137
 msgid "Enter note number"
 msgstr "Inserisci il numero della nota"
 
-#: blank-footnotes.php:78
+#: blank-footnotes.php:132
 msgid "Note:"
-msgstr "Nota"
-
+msgstr "Nota:"
