@@ -1,10 +1,10 @@
 === Blank Footnotes ===
 Contributors: conraid
-Donate link: http://conraid.net
+Donate link: https://corradofranco.it
 Tags: footnotes, footnote, notes, reference, endnotes, formatting
 Requires at least: 4.4
-Tested up to: 5.4
-Stable tag: 1.6.3
+Tested up to: 6.0
+Stable tag: 1.6.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -49,6 +49,18 @@ Considering that this plugin, like others working with "markdown", parsing the p
 
 == Changelog ==
 
+= 1.6.6 =
+
+* Changed strings translation
+
+= 1.6.5 =
+
+* Fixed version
+
+= 1.6.4 =
+
+* Fixed typo
+
 = 1.6.3 =
 
 * Fixed plugin name
@@ -61,8 +73,7 @@ Considering that this plugin, like others working with "markdown", parsing the p
 = 1.6.1 =
 
 * Added note for Gutenberg.
-* Fixed style according to WordPress Coding Standards for
-PHP_CodeSniffer.
+* Fixed style according to WordPress Coding Standards for PHP_CodeSniffer.
 * Tested with Wordpress 5.0 classic editor
 
 = 1.6 =

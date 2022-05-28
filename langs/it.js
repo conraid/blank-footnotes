@@ -1,5 +1,5 @@
 tinymce.addI18n('it',{
-"Reference note": "Riferimento nota",
-"Note": "Nota",
-"Enter note number": "Inserisci il numero della nota"
+"Note reference": "Riferimento nota",
+"Note:": "Nota",
+"Enter the note number": "Inserisci il numero della nota"
 });
