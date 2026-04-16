@@ -4,6 +4,7 @@ Donate link: https://corradofranco.it
 Tags: footnotes, footnote, notes, reference, endnotes.
 Requires at least: 4.4
 Tested up to: 7.0
+Requires PHP: 7.4
 Stable tag: 1.6.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -41,6 +42,20 @@ No configuration is necessary.
 
 Considering that this plugin, like others working with "markdown", parsing the page every time I load it, I highly recommend using a caching plugin.
 
+== Frequently Asked Questions ==
+
+= Does this plugin work with any theme? =
+Yes, it is designed to work with all standard WordPress themes.
+
+= Where can I report bugs? =
+Please use the support forum on WordPress.org.
+
+== Upgrade Notice ==
+
+= 1.6.7 =
+
+Maintenance release: updated readme.
+
 == Screenshots ==
 
 1. Visual Editor TinyMCE with plugin actived
@@ -48,6 +63,10 @@ Considering that this plugin, like others working with "markdown", parsing the p
 3. Example with the footnotes display
 
 == Changelog ==
+
+= 1.6.7 =
+
+* Updated readme.
 
 = 1.6.6 =
 
