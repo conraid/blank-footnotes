@@ -7,7 +7,7 @@
  * @category  Wordpress_Plugin
  * @package   Blank_Footnotes
  * @author    Corrado Franco <conraid@linux.it>
- * @copyright 2016-2019 Corrado Franco
+ * @copyright 2016-2026 Corrado Franco
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GPL-2
  * @link      https://github.com/conraid/blank-footnotes
  */
@@ -16,7 +16,7 @@
 Plugin Name: Blank Footnotes
 Plugin URI: https://github.com/conraid/blank-footnotes
 Description: Footnotes in Markdown mode
-Version: 1.6.6
+Version: 1.6.7
 Author: Corrado Franco <conraid@pm.me>
 Author URI: https://corradofranco.it
 License: GPL-2
@@ -25,7 +25,7 @@ Domain Path: /langs
 */
 
 /**
- * Copyright 2016-2020 Corrado Franco <conraid@pm.me>
+ * Copyright 2016-2026 Corrado Franco <conraid@pm.me>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
