@@ -47,8 +47,14 @@ Considering that this plugin, like others working with "markdown", parsing the p
 = Does this plugin work with any theme? =
 Yes, it is designed to work with all standard WordPress themes.
 
-= Where can I report bugs? =
-Please use the support forum on WordPress.org.
+= Does it work with Gutenberg? =
+Yes, this plugin works with the Gutenberg editor. However, the dedicated button only appears in the Classic Editor. For now, when using Gutenberg, you can enter the shortcodes directly into the blocks.
+
+= How do I install it? =
+Please refer to the "Installation" tab for step-by-step instructions.
+
+= How can I customize it? =
+You can use CSS to style the `.footnote` class. Use `span.footnote` for the notes themselves and `sup.footnote` for the reference numbers.
 
 == Upgrade Notice ==
 
