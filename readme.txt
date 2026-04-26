@@ -46,17 +46,17 @@ Customizing Footnote Layout
 
 If you want the footnote number to be logically separated from the note (for CSS targeting) but want to prevent unwanted line breaks or extra spacing caused by WordPress's automatic paragraphs, you can add the following CSS to your theme:
 
-/* Ensure the footnote stays inline or as a specific block */
-p > span.footnote {
-    display: inline-block;
-}
-
-/* Remove extra spacing from the paragraph containing the footnote */
-p:has(> span.footnote) {
-    margin-bottom: 0;
-    margin-top: 0;
-    padding: 0;
-}
+    /* Ensure the footnote stays inline or as a specific block */
+    p > span.footnote {
+        display: inline-block;
+    }
+    
+    /* Remove extra spacing from the paragraph containing the footnote */
+    p:has(> span.footnote) {
+        margin-bottom: 0;
+        margin-top: 0;
+        padding: 0;
+    }
 
 == Frequently Asked Questions ==
 
