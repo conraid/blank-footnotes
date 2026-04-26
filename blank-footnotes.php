@@ -2,7 +2,7 @@
 /**
  * Convert footnotes Markdown in html
  *
- * PHP version 7
+ * PHP version 7.4 or later
  *
  * @category  Wordpress_Plugin
  * @package   Blank_Footnotes
@@ -16,7 +16,7 @@
 Plugin Name: Blank Footnotes
 Plugin URI: https://github.com/conraid/blank-footnotes
 Description: Footnotes in Markdown mode
-Version: 1.6.7
+Version: 1.7
 Author: Corrado Franco <conraid@pm.me>
 Author URI: https://corradofranco.it
 License: GPL-2
@@ -25,21 +25,12 @@ Domain Path: /langs
 */
 
 /**
- * Copyright 2016-2026 Corrado Franco <conraid@pm.me>
+ * Copyright 2016-2026 Corrado Franco <conraid@linux.it>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 3
- * of the License, or any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
  */
 
 // Exit if accessed directly.
@@ -79,24 +70,32 @@ function bfn_markdown_convert( $content ) {
 	// Regex to convert markdown reference notes to HTML.
 	$content = preg_replace( '/\[\^(\d+)\]/', "<sup class='footnote' id='fnref-$post_id-$1'><a href='#fn-$post_id-$1' rel='footnote'>$1</a></sup>", $content );
 
-	return( $content );
+	return $content;
 
 }
+
 /**
- * Add action blank_fn_markdown_convert if jetpack markdown is not loaded
+ * Register footnote filters.
  *
- * Classic method does not work in all occasions.
+ * Separated into a dedicated function for better modularity and to allow
+ * future expansion (e.g., adding extra cleanup filters).
+ */
+function bfn_register_filters() {
+    add_filter( 'the_content', 'bfn_markdown_convert', 1 );
+}
+
+/**
+ * Register the filters only if Jetpack's Markdown module is not active.
  *
- *    if ( ! class_exists( 'Jetpack' ) || ! Jetpack::is_module_active( 'photon' ) ) {
- *      add_action( 'the_content', 'bfn_markdown_convert', 1 );
- *    }
+ * We check active modules directly because the classic method does not always work:
+ * if ( ! class_exists( 'Jetpack' ) || ! Jetpack::is_module_active( 'markdown' ) ) { ... }
  */
 if ( get_option( 'jetpack_active_modules' ) ) {
-	if ( ! in_array( 'markdown', get_option( 'jetpack_active_modules' ), true ) ) {
-		add_action( 'the_content', 'bfn_markdown_convert', 1 );
-	}
+    if ( ! in_array( 'markdown', get_option( 'jetpack_active_modules' ), true ) ) {
+        bfn_register_filters();
+    }
 } else {
-	add_action( 'the_content', 'bfn_markdown_convert', 1 );
+    bfn_register_filters();
 }
 
 /**
@@ -197,5 +196,4 @@ function bfn_add_mce_button() {
 
 }
 add_action( 'admin_head', 'bfn_add_mce_button' );
-
 

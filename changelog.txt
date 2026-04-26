@@ -1,6 +1,13 @@
 *** Blank Footnotes ***
 
-20206-04-16 version 1.6.7
+2026-04-22 version 1.7
+
+* Refactor: Modularized filter registration logic for better compatibility and future maintenance.
+* Improvement: Updated PHP version requirements and confirmed compatibility with PHP 8.5.
+* Update: Tested up to WordPress 7.0.
+* Added FAQ and CSS note.
+
+2026-04-16 version 1.6.7
 
 * Fixed a typo in README.txt
 
@@ -49,6 +56,7 @@ PHP_CodeSniffer.
 * Fix jetpack detection
 
 2016-02-08 version 1.1
+
 
 * Fix translated string
 * Fix button string

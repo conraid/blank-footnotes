@@ -5,7 +5,7 @@ Tags: footnotes, footnote, notes, reference, endnotes.
 Requires at least: 4.4
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.6.7
+Stable tag: 1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -42,6 +42,22 @@ No configuration is necessary.
 
 Considering that this plugin, like others working with "markdown", parsing the page every time I load it, I highly recommend using a caching plugin.
 
+Customizing Footnote Layout
+
+If you want the footnote number to be logically separated from the note (for CSS targeting) but want to prevent unwanted line breaks or extra spacing caused by WordPress's automatic paragraphs, you can add the following CSS to your theme:
+
+/* Ensure the footnote stays inline or as a specific block */
+p > span.footnote {
+    display: inline-block;
+}
+
+/* Remove extra spacing from the paragraph containing the footnote */
+p:has(> span.footnote) {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
 == Frequently Asked Questions ==
 
 = Does this plugin work with any theme? =
@@ -58,9 +74,12 @@ You can use CSS to style the `.footnote` class. Use `span.footnote` for the note
 
 == Upgrade Notice ==
 
-= 1.6.7 =
+= 1.7 =
 
-Maintenance release: updated readme.
+* Refactor: Modularized filter registration logic for better compatibility and future maintenance.
+* Improvement: Updated PHP version requirements and confirmed compatibility with PHP 8.x.
+* Update: Tested up to WordPress 7.0.
+* Added FAQ and CSS note.
 
 == Screenshots ==
 
@@ -69,6 +88,13 @@ Maintenance release: updated readme.
 3. Example with the footnotes display
 
 == Changelog ==
+
+= 1.7 =
+
+* Refactor: Modularized filter registration logic for better compatibility and future maintenance.
+* Improvement: Updated PHP version requirements and confirmed compatibility with PHP 8.5.
+* Update: Tested up to WordPress 7.0.
+* Added FAQ and CSS note.
 
 = 1.6.7 =
 
@@ -118,6 +144,7 @@ Maintenance release: updated readme.
 * Fix jetpack detection
 
 = 1.1 =
+
 
 * Fix english language
 * Fix text editor string

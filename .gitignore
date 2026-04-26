@@ -1,5 +1,23 @@
+# Editor / IDE
+.vscode
+.vscode/
+*.code-workspace
+.idea/
+
+# Neovim / Vim
+*.swp
+*.swo
 *~
+
+# macOS
+.DS_Store
+._*
+.AppleDouble
+
+# Sviluppo PHP / WP
 .phpcs.xml
 phpcs.xml
 ruleset.xml
+*.log
+error_log
 istruzioni_svn.txt
